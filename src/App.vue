@@ -38,9 +38,11 @@
                 <div id="menu2" class="nav-box menuhd">
                     <ul>
                         <li class="index">
-                            <a href="#" class="">
+                            
+                                <router-link to="/Index">
                                 <span class="out" style="top: 0px;">首页</span>
-                            </a>
+                            
+                            </router-link>
                         </li>
                         <li class="news">
                             <a href="#" class="">
@@ -80,6 +82,8 @@
             </div>
         </div>
     </div>
+    <!-- 路由出口标签 -->
+    <router-view></router-view>
     <!-- 底部 -->
     <div class="footer">
                 <div class="section">
@@ -145,11 +149,11 @@ $(document).ready(function() {
 </script>
 
 <style>
-
-@import url("./assets/statics/site/css/style.css");
 @import url("./assets/lib/css/style.css");
+@import url("./assets/statics/site/css/style.css");
+
 #menu2 {
     background-image: none
 }
-      
+
 </style>
