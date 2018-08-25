@@ -91,7 +91,7 @@
                                     <img v-lazy="itemSon.img_url">
                                 </div>
                                 <div class="info">
-                                    <h3>{{itemSon.artitle}}</h3>
+                                    <h3>{{itemSon.artTitle}}</h3>
                                     <p class="price">   
                                         <b>{{itemSon.sell_price}}</b>元</p>
                                     <p>

@@ -19,6 +19,10 @@ import VueLazyload from 'vue-lazyload'
 
 // 引入事件插件moment包
 import moment from "moment"
+// y引入iview包
+import iView from 'iview';
+// 引入iview样式
+import 'iview/dist/styles/iview.css';
 // 全局过滤器
 Vue.filter('capitalize', function (value) {
   return moment(value).format('YYYY年MM月DD日')
@@ -27,6 +31,8 @@ Vue.filter('capitalize', function (value) {
 Vue.use(VueRouter)
 // 注册element标签
 Vue.use(ElementUI)
+// 注册iview
+Vue.use(iView);
 // 注册懒加载属性  注意图片需要用require模块化导入
 Vue.use(VueLazyload, {
   preLoad: 1.3,
